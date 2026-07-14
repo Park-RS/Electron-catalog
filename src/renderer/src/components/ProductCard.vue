@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { RawItem } from '../service/CatalogService'
+import type { CatalogItem } from '../service/CatalogService'
 import { catalogService } from '../service/CatalogService'
 
 defineProps<{
-  item: RawItem
+  item: CatalogItem
 }>()
 </script>
 
@@ -33,6 +33,7 @@ defineProps<{
 
     <div class="flex flex-wrap gap-4 text-xs text-gray-500 border-t border-gray-100 pt-3">
       <div v-if="item.product.weight && item.product.unitType" class="flex items-center gap-1">
+        <!-- Иконок получше на Lucide не нашел -->
         <span class="text-gray-400">⚖️</span>
         <span>{{ item.product.weight }} {{ item.product.unitType }}</span>
       </div>
