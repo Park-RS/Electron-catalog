@@ -1,0 +1,766 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "idParent": null,
+      "name": "Горячие напитки",
+      "logo": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=100&h=100"
+    },
+    {
+      "id": 2,
+      "idParent": 1,
+      "name": "Кофе"
+    },
+    {
+      "id": 3,
+      "idParent": 2,
+      "name": "Эспрессо и американо"
+    },
+    {
+      "id": 4,
+      "idParent": 2,
+      "name": "Молочный кофе"
+    },
+    {
+      "id": 5,
+      "idParent": 2,
+      "name": "Авторский кофе"
+    },
+    {
+      "id": 6,
+      "idParent": 1,
+      "name": "Чай"
+    },
+    {
+      "id": 7,
+      "idParent": 6,
+      "name": "Черный чай"
+    },
+    {
+      "id": 8,
+      "idParent": 6,
+      "name": "Зеленый чай"
+    },
+    {
+      "id": 9,
+      "idParent": 6,
+      "name": "Травяной чай"
+    },
+    {
+      "id": 10,
+      "idParent": null,
+      "name": "Холодные напитки",
+      "logo": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=100&h=100"
+    },
+    {
+      "id": 11,
+      "idParent": 10,
+      "name": "Фраппе и коктейли"
+    },
+    {
+      "id": 12,
+      "idParent": 10,
+      "name": "Лимонады"
+    },
+    {
+      "id": 13,
+      "idParent": 10,
+      "name": "Смузи"
+    },
+    {
+      "id": 14,
+      "idParent": null,
+      "name": "Десерты",
+      "logo": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=100&h=100"
+    },
+    {
+      "id": 15,
+      "idParent": 14,
+      "name": "Выпечка"
+    },
+    {
+      "id": 16,
+      "idParent": 14,
+      "name": "Торты и пирожные"
+    },
+    {
+      "id": 17,
+      "idParent": 14,
+      "name": "Печенье и конфеты"
+    },
+    {
+      "id": 18,
+      "idParent": null,
+      "name": "Завтраки",
+      "logo": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=100&h=100"
+    },
+    {
+      "id": 19,
+      "idParent": 18,
+      "name": "Горячие завтраки"
+    },
+    {
+      "id": 20,
+      "idParent": 18,
+      "name": "Холодные завтраки"
+    },
+    {
+      "id": 21,
+      "idParent": null,
+      "name": "Сэндвичи и салаты",
+      "logo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=100&h=100"
+    },
+    {
+      "id": 22,
+      "idParent": 21,
+      "name": "Сэндвичи"
+    },
+    {
+      "id": 23,
+      "idParent": 21,
+      "name": "Салаты"
+    }
+  ],
+  "items": [
+    {
+      "id": 101,
+      "idGroup": 3,
+      "product": {
+        "id": 1,
+        "name": "Эспрессо Классик",
+        "price": 12000,
+        "description": "Крепкий черный кофе с плотной пенкой крема. Идеальный баланс кислинки и горечи.",
+        "weight": 30,
+        "unitType": "мл",
+        "brand": "Arabica Premium",
+        "calories": 5,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 102,
+      "idGroup": 3,
+      "product": {
+        "id": 2,
+        "name": "Эспрессо Доппио",
+        "price": 16000,
+        "description": "Двойной эспрессо для настоящих ценителей крепкого кофе.",
+        "weight": 60,
+        "unitType": "мл",
+        "brand": "Arabica Premium",
+        "calories": 10,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 103,
+      "idGroup": 3,
+      "product": {
+        "id": 3,
+        "name": "Американо",
+        "price": 15000,
+        "description": "Классический черный кофе с мягкой текстурой и насыщенным вкусом.",
+        "weight": 200,
+        "unitType": "мл",
+        "brand": "Arabica Premium",
+        "calories": 10,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 104,
+      "idGroup": 4,
+      "product": {
+        "id": 4,
+        "name": "Капучино",
+        "price": 22000,
+        "description": "Идеальное сочетание эспрессо, горячего молока и воздушной молочной пены.",
+        "weight": 180,
+        "unitType": "мл",
+        "brand": "Arabica Premium",
+        "calories": 120,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 105,
+      "idGroup": 4,
+      "product": {
+        "id": 5,
+        "name": "Латте",
+        "price": 24000,
+        "description": "Нежный кофейный напиток с большим количеством молока и легкой пенкой.",
+        "weight": 300,
+        "unitType": "мл",
+        "brand": "Arabica Premium",
+        "calories": 150,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 106,
+      "idGroup": 4,
+      "product": {
+        "id": 6,
+        "name": "Флэт Уайт",
+        "price": 23000,
+        "description": "Двойной эспрессо с молоком и тонким слоем микропены.",
+        "weight": 180,
+        "unitType": "мл",
+        "brand": "Arabica Premium",
+        "calories": 110,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 107,
+      "idGroup": 4,
+      "product": {
+        "id": 7,
+        "name": "Раф Кофе",
+        "price": 26000,
+        "description": "Нежный сливочный кофе с ванильным вкусом и бархатистой текстурой.",
+        "weight": 200,
+        "unitType": "мл",
+        "brand": "Coffee House",
+        "calories": 220,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 108,
+      "idGroup": 5,
+      "product": {
+        "id": 8,
+        "name": "Карамельный Латте",
+        "price": 28000,
+        "description": "Латте с домашней карамелью и сливками. Сладкий и ароматный.",
+        "weight": 320,
+        "unitType": "мл",
+        "brand": "Coffee House",
+        "calories": 280,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1481437642641-2f0ae875f836?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 109,
+      "idGroup": 5,
+      "product": {
+        "id": 9,
+        "name": "Моккачино",
+        "price": 29000,
+        "description": "Кофе с горячим шоколадом и молоком. Для любителей сладкого.",
+        "weight": 280,
+        "unitType": "мл",
+        "brand": "Coffee House",
+        "calories": 320,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 110,
+      "idGroup": 5,
+      "product": {
+        "id": 10,
+        "name": "Айс Латте",
+        "price": 27000,
+        "description": "Холодный латте с льдом. Освежающий кофейный напиток.",
+        "weight": 300,
+        "unitType": "мл",
+        "brand": "Coffee House",
+        "calories": 140,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 111,
+      "idGroup": 7,
+      "product": {
+        "id": 11,
+        "name": "Чай Эрл Грей",
+        "price": 18000,
+        "description": "Черный чай с добавлением масла бергамота. Классический английский вкус.",
+        "weight": 250,
+        "unitType": "мл",
+        "brand": "Twinings",
+        "calories": 2,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 112,
+      "idGroup": 7,
+      "product": {
+        "id": 12,
+        "name": "Английский Завтрак",
+        "price": 18000,
+        "description": "Крепкий черный чай для бодрого начала дня.",
+        "weight": 250,
+        "unitType": "мл",
+        "brand": "Twinings",
+        "calories": 2,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 113,
+      "idGroup": 8,
+      "product": {
+        "id": 13,
+        "name": "Зеленый чай Сенча",
+        "price": 19000,
+        "description": "Японский зеленый чай с травянистым вкусом и легкой сладостью.",
+        "weight": 250,
+        "unitType": "мл",
+        "brand": "Green Tea Co",
+        "calories": 1,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 114,
+      "idGroup": 8,
+      "product": {
+        "id": 14,
+        "name": "Молочный Улун",
+        "price": 21000,
+        "description": "Улун с нежным сливочным вкусом и карамельным послевкусием.",
+        "weight": 250,
+        "unitType": "мл",
+        "brand": "Green Tea Co",
+        "calories": 15,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 115,
+      "idGroup": 9,
+      "product": {
+        "id": 15,
+        "name": "Ромашковый чай",
+        "price": 17000,
+        "description": "Успокаивающий травяной чай с цветочным ароматом.",
+        "weight": 250,
+        "unitType": "мл",
+        "brand": "Herbal Tea",
+        "calories": 0,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 116,
+      "idGroup": 9,
+      "product": {
+        "id": 16,
+        "name": "Облепиховый чай",
+        "price": 22000,
+        "description": "Витаминный чай с облепихой, медом и имбирем.",
+        "weight": 300,
+        "unitType": "мл",
+        "brand": "Herbal Tea",
+        "calories": 45,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 117,
+      "idGroup": 11,
+      "product": {
+        "id": 17,
+        "name": "Карамельный фраппе",
+        "price": 32000,
+        "description": "Холодный кофейный коктейль с карамельным сиропом, молоком и взбитыми сливками.",
+        "weight": 350,
+        "unitType": "мл",
+        "brand": "Coffee House",
+        "calories": 380,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 118,
+      "idGroup": 11,
+      "product": {
+        "id": 18,
+        "name": "Шоколадный фраппе",
+        "price": 33000,
+        "description": "Холодный шоколадный коктейль с кофе и взбитыми сливками.",
+        "weight": 350,
+        "unitType": "мл",
+        "brand": "Coffee House",
+        "calories": 420,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 119,
+      "idGroup": 12,
+      "product": {
+        "id": 19,
+        "name": "Домашний лимонад",
+        "price": 25000,
+        "description": "Освежающий лимонад из свежих лимонов, мяты и имбиря.",
+        "weight": 400,
+        "unitType": "мл",
+        "brand": "Fresh",
+        "calories": 120,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 120,
+      "idGroup": 12,
+      "product": {
+        "id": 20,
+        "name": "Клубничный лимонад",
+        "price": 28000,
+        "description": "Лимонад со свежей клубникой и базиликом.",
+        "weight": 400,
+        "unitType": "мл",
+        "brand": "Fresh",
+        "calories": 140,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 121,
+      "idGroup": 13,
+      "product": {
+        "id": 21,
+        "name": "Зеленый смузи",
+        "price": 32000,
+        "description": "Смузи из шпината, киви, яблока и банана.",
+        "weight": 350,
+        "unitType": "мл",
+        "brand": "Fresh",
+        "calories": 180,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 122,
+      "idGroup": 13,
+      "product": {
+        "id": 22,
+        "name": "Ягодный смузи",
+        "price": 34000,
+        "description": "Смузи из клубники, малины, черники и йогурта.",
+        "weight": 350,
+        "unitType": "мл",
+        "brand": "Fresh",
+        "calories": 210,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 123,
+      "idGroup": 15,
+      "product": {
+        "id": 23,
+        "name": "Круассан с миндалем",
+        "price": 19000,
+        "description": "Свежевыпеченный круассан с миндальным кремом и лепестками миндаля.",
+        "weight": 80,
+        "unitType": "г",
+        "brand": "Boulangerie",
+        "calories": 320,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1555507036-ab1f4038024a?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 124,
+      "idGroup": 15,
+      "product": {
+        "id": 24,
+        "name": "Круассан классический",
+        "price": 15000,
+        "description": "Традиционный французский круассан с хрустящей корочкой.",
+        "weight": 70,
+        "unitType": "г",
+        "brand": "Boulangerie",
+        "calories": 280,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 125,
+      "idGroup": 15,
+      "product": {
+        "id": 25,
+        "name": "Шоколадный маффин",
+        "price": 17000,
+        "description": "Нежный маффин с какао и шоколадной крошкой.",
+        "weight": 90,
+        "unitType": "г",
+        "brand": "Boulangerie",
+        "calories": 350,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 126,
+      "idGroup": 16,
+      "product": {
+        "id": 26,
+        "name": "Чизкейк Нью-Йорк",
+        "price": 35000,
+        "description": "Классический американский чизкейк с нежным сливочным вкусом и ягодным соусом.",
+        "weight": 150,
+        "unitType": "г",
+        "brand": "Sweet Dreams",
+        "calories": 420,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1524351199032-cb0ac61c5d3e?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 127,
+      "idGroup": 16,
+      "product": {
+        "id": 27,
+        "name": "Тирамису",
+        "price": 38000,
+        "description": "Итальянский десерт с маскарпоне, кофе и какао.",
+        "weight": 130,
+        "unitType": "г",
+        "brand": "Sweet Dreams",
+        "calories": 380,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 128,
+      "idGroup": 16,
+      "product": {
+        "id": 28,
+        "name": "Эклер ванильный",
+        "price": 22000,
+        "description": "Заварное пирожное с ванильным кремом и шоколадной глазурью.",
+        "weight": 70,
+        "unitType": "г",
+        "brand": "Sweet Dreams",
+        "calories": 290,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 129,
+      "idGroup": 17,
+      "product": {
+        "id": 29,
+        "name": "Макарон ассорти",
+        "price": 25000,
+        "description": "Набор из 3 французских макарун (ваниль, шоколад, фисташка).",
+        "weight": 50,
+        "unitType": "г",
+        "brand": "Sweet Dreams",
+        "calories": 220,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 130,
+      "idGroup": 17,
+      "product": {
+        "id": 30,
+        "name": "Шоколадное печенье",
+        "price": 12000,
+        "description": "Домашнее печенье с кусочками темного шоколада.",
+        "weight": 40,
+        "unitType": "г",
+        "brand": "Boulangerie",
+        "calories": 180,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 131,
+      "idGroup": 19,
+      "product": {
+        "id": 31,
+        "name": "Сырники",
+        "price": 32000,
+        "description": "Творожные сырники со сметаной и домашним вареньем.",
+        "weight": 200,
+        "unitType": "г",
+        "brand": "Breakfast Club",
+        "calories": 380,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 132,
+      "idGroup": 19,
+      "product": {
+        "id": 32,
+        "name": "Омлет с овощами",
+        "price": 29000,
+        "description": "Пышный омлет с помидорами, перцем и зеленью.",
+        "weight": 180,
+        "unitType": "г",
+        "brand": "Breakfast Club",
+        "calories": 280,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 133,
+      "idGroup": 19,
+      "product": {
+        "id": 33,
+        "name": "Авокадо тост",
+        "price": 35000,
+        "description": "Тост из цельнозернового хлеба с авокадо, яйцом пашот и томатами черри.",
+        "weight": 220,
+        "unitType": "г",
+        "brand": "Breakfast Club",
+        "calories": 340,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 134,
+      "idGroup": 20,
+      "product": {
+        "id": 34,
+        "name": "Гранола с йогуртом",
+        "price": 28000,
+        "description": "Домашняя гранола с греческим йогуртом и свежими ягодами.",
+        "weight": 250,
+        "unitType": "г",
+        "brand": "Breakfast Club",
+        "calories": 320,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 135,
+      "idGroup": 20,
+      "product": {
+        "id": 35,
+        "name": "Смузи-боул",
+        "price": 36000,
+        "description": "Банановый смузи-боул с гранолой, кокосом и фруктами.",
+        "weight": 300,
+        "unitType": "г",
+        "brand": "Breakfast Club",
+        "calories": 380,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 136,
+      "idGroup": 22,
+      "product": {
+        "id": 36,
+        "name": "Клубный сэндвич",
+        "price": 38000,
+        "description": "Тройной сэндвич с курицей, беконом, овощами и соусом.",
+        "weight": 280,
+        "unitType": "г",
+        "brand": "Sandwich Bar",
+        "calories": 520,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 137,
+      "idGroup": 22,
+      "product": {
+        "id": 37,
+        "name": "Сэндвич с лососем",
+        "price": 42000,
+        "description": "Сэндвич с копченым лососем, сливочным сыром и рукколой.",
+        "weight": 220,
+        "unitType": "г",
+        "brand": "Sandwich Bar",
+        "calories": 380,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 138,
+      "idGroup": 22,
+      "product": {
+        "id": 38,
+        "name": "Гриль-сэндвич",
+        "price": 34000,
+        "description": "Горячий сэндвич с ветчиной, сыром и томатами на гриле.",
+        "weight": 240,
+        "unitType": "г",
+        "brand": "Sandwich Bar",
+        "calories": 450,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=400&h=300"
+      }
+    },
+    {
+      "id": 139,
+      "idGroup": 23,
+      "product": {
+        "id": 39,
+        "name": "Цезарь с курицей",
+        "price": 42000,
+        "description": "Классический салат цезарь с куриной грудкой, пармезаном и соусом.",
+        "weight": 250,
+        "unitType": "г",
+        "brand": "Fresh",
+        "calories": 380,
+        "inStock": true,
+        "logo": "https://picsum.photos/seed/espresso1/400/300"
+      }
+    },
+    {
+      "id": 140,
+      "idGroup": 23,
+      "product": {
+        "id": 40,
+        "name": "Греческий салат",
+        "price": 38000,
+        "description": "Свежие овощи, фета, оливки и оливковое масло.",
+        "weight": 220,
+        "unitType": "г",
+        "brand": "Fresh",
+        "calories": 280,
+        "inStock": true,
+        "logo": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&h=300"
+      }
+    }
+  ]
+}

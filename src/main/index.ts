@@ -2,6 +2,8 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { readFileSync } from 'fs'
+import type { Catalog } from './models/CatalogTypes'
 
 function createWindow(): void {
   // Create the browser window.
@@ -13,6 +15,8 @@ function createWindow(): void {
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
+      webSecurity: false,
+      allowRunningInsecureContent: true,
       sandbox: false
     }
   })
@@ -34,6 +38,19 @@ function createWindow(): void {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
 }
+
+const loadCatalog = (): Catalog => {
+  const basePath = is.dev ? process.cwd() : app.getAppPath()
+
+  const catalogPath = join(basePath, 'catalog', 'catalog.json')
+
+  const fileContent = readFileSync(catalogPath, 'utf-8')
+  return JSON.parse(fileContent)
+}
+
+ipcMain.handle('get-catalog', () => {
+  return loadCatalog()
+})
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

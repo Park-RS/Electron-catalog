@@ -1,26 +1,51 @@
 <script setup lang="ts">
-import Versions from './components/Versions.vue'
+import { ref, onMounted, computed  } from 'vue'
+import { catalogService, type CatalogItem, type CategoryNode,} from './service/CatalogService'
+import SideMenu from '@renderer/components/ui/SideMenu.vue'
+import SearchProducts from '@renderer/components/ui/SearchProducts.vue'
+import SearchContent from '@renderer/components/ui/SearchContent.vue'
 
-const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
+const tree = ref<CategoryNode[]>([])
+const selectedNode = ref<CategoryNode | null>(null)
+const searchQuery = ref('')
+
+onMounted(async () => {
+  await catalogService.loadData()
+  tree.value = catalogService.getTree()
+
+  if (tree.value.length > 0) {
+    selectedNode.value = tree.value[0]
+  }
+})
+
+const displayedItems = computed<CatalogItem[]>(() => {
+  if (searchQuery.value.trim().length > 0) {
+    return catalogService.searchProducts(searchQuery.value)
+  }
+  return selectedNode.value?.getAllProductsForCurrentNode() || []
+})
+
+const handleCategorySelect = (node: CategoryNode) => { // был бы это запрос на бэк было бы плохо) дебаунс в 300 мс тут хорошо зайдет
+  selectedNode.value = node
+  searchQuery.value = ''
+}
+
+
 </script>
 
 <template>
-  <img alt="logo" class="logo" src="./assets/electron.svg" />
-  <div class="creator">Powered by electron-vite</div>
-  <div class="text">
-    Build an Electron app with
-    <span class="vue">Vue</span>
-    and
-    <span class="ts">TypeScript</span>
+  <div class="flex w-full h-screen bg-gray-50 text-gray-900 font-sans overflow-hidden"> 
+    <!-- По хорошему тут нужна обёртка в router либо в Layout для приличия, но недостаточно страниц для того чтобы был смысл от этого всего -->
+    <SideMenu :tree="tree" @on-select="handleCategorySelect" />
+    <main class="flex-1 flex flex-col h-full w-full min-w-0">
+      <SearchProducts v-model="searchQuery" />
+      <SearchContent :displayed-items="displayedItems" :selected-node="selectedNode" :search-query="searchQuery" />
+    </main>
   </div>
-  <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
-  <div class="actions">
-    <div class="action">
-      <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">Documentation</a>
-    </div>
-    <div class="action">
-      <a target="_blank" rel="noreferrer" @click="ipcHandle">Send IPC</a>
-    </div>
-  </div>
-  <Versions />
 </template>
+
+<style>
+[v-auto-animate] {
+  transition: all 0.25s ease-out;
+}
+</style>

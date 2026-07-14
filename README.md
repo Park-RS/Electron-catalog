@@ -1,34 +1,15 @@
-# electron-catalog
+# Установка и запуск
 
-An Electron application with Vue and TypeScript
+### Требования
+- npm
+- node.js > 18 
 
-## Recommended IDE Setup
+## Клонирование репозитория
+git clone https://github.com/Park-RS/Electron-catalog.git
+cd Electron-catalog
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## установка зависимсоитей ( обычно использую yarn, но тут npm )
+npm i
 
-## Project Setup
-
-### Install
-
-```bash
-$ yarn
-```
-
-### Development
-
-```bash
-$ yarn dev
-```
-
-### Build
-
-```bash
-# For windows
-$ yarn build:win
-
-# For macOS
-$ yarn build:mac
-
-# For Linux
-$ yarn build:linux
-```
+## запускаем приложение npm run dev
+npm run dev
