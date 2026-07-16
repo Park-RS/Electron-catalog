@@ -19,7 +19,7 @@ defineProps<{
       />
     </div>
     <div class="flex justify-between items-start mb-3">
-      <h3 class="text-lg font-bold text-gray-800 leading-tight pr-4">
+      <h3 class="text-lg font-semibold text-gray-800 leading-tight pr-4">
         {{ item.product.name }}
       </h3>
       <span class="text-xl font-extrabold text-blue-600 whitespace-nowrap">

@@ -22,23 +22,52 @@ defineProps<{
         <span class="text-base font-normal text-gray-500 ml-2">({{ displayedItems.length }})</span>
       </h2>
     </div>
+    <Transition name="fade" appear mode="in-out">
+      <ul
+        v-if="displayedItems.length > 0"
+        v-auto-animate
+        style="display: grid-lanes"
+        class="flex flex-wrap min-w-full md:gap-6 w-full min-w-0"
+      >
+        <ProductCard
+          v-for="item in displayedItems"
+          :key="item.id"
+          class="w-full max-h-[444px]"
+          :item="item"
+        />
+      </ul>
+    </Transition>
 
-    <div
-      v-if="displayedItems.length > 0"
-      v-auto-animate
-      class="grid grid-cols-1 sm:grid-cols-2 min-w-full lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 w-full min-w-0"
-    >
-      <ProductCard v-for="item in displayedItems" :key="item.id" class="w-full" :item="item" />
-    </div>
-
-    <div
-      v-else
-      class="w-full min-h-[400px] gap-3 flex flex-col items-center justify-center bg-white rounded-2xl border border-gray-200 shadow-sm"
-    >
-      <Utensils :size="72" color="gray" />
-      <p class="text-xl font-semibold text-gray-600 mb-2">Ничего не найдено :(</p>
-      <p v-if="searchQuery" class="text-sm text-gray-500">Попробуйте изменить поисковый запрос</p>
-      <p v-else class="text-sm text-gray-500">В этой категории пока нет товаров</p>
-    </div>
+    <Transition name="fade" appear mode="out-in">
+      <div
+        v-if="displayedItems.length <= 0"
+        class="w-full min-h-[400px] gap-3 flex flex-col items-center justify-center bg-white rounded-2xl border border-gray-200 shadow-sm"
+      >
+        <Utensils :size="72" color="gray" />
+        <p class="text-xl font-bold text-gray-600 mb-2">Ничего не найдено :(</p>
+        <p v-if="searchQuery" class="text-sm text-gray-500">Попробуйте изменить поисковый запрос</p>
+        <p v-else class="text-sm text-gray-500">В этой категории пока нет товаров</p>
+      </div>
+    </Transition>
   </div>
 </template>
+<style scoped>
+.fade-enter-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+  display: none;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+</style>
