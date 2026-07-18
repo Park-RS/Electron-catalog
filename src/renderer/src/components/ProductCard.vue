@@ -1,22 +1,31 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import type { CatalogItem } from '../service/CatalogService'
 import { catalogService } from '../service/CatalogService'
+import { ImageOff } from '@lucide/vue'
 
 defineProps<{
   item: CatalogItem
 }>()
+
+const isCurrentImageNotFound = ref<boolean>(false)
 </script>
 
 <template>
   <div
     class="bg-white rounded-xl max-w-xs flex flex-col gap-3 p-5 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
   >
-    <div class="w-full h-48 bg-gray-100 overflow-hidden">
+    <div
+      class="w-full h-48 bg-gray-100 flex items-center rounded-xl justify-center overflow-hidden"
+    >
       <img
+        v-if="!isCurrentImageNotFound"
         :src="item.product.logo"
         :alt="item.product.name"
-        class="w-full h-full object-cover hover:scale-105 rounded-xl transition-transform duration-300"
+        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        @error="isCurrentImageNotFound = true"
       />
+      <ImageOff v-else class="w-[70%] h-[70%] opacity-80" color="gray"></ImageOff>
     </div>
     <div class="flex justify-between items-start mb-3">
       <h3 class="text-lg font-semibold text-gray-800 leading-tight pr-4">

@@ -3,7 +3,7 @@ import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 import { readFileSync } from 'fs'
-import type { Catalog } from './models/CatalogTypes'
+import { Catalog } from '../renderer/src/service/catalogService'
 
 function createWindow(): void {
   // Create the browser window.
