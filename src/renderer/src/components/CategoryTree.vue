@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { CategoryNode } from '../services/CatalogService'
-import { ChevronRight } from '@lucide/vue';
+import { ChevronRight } from '@lucide/vue'
+import type { CategoryNode } from '@renderer/service/CatalogService'
 
-const props = defineProps<{
+defineProps<{
   nodes: CategoryNode[]
   level?: number
 }>()
@@ -40,8 +40,14 @@ const handleSelect = (node: CategoryNode) => {
             class="w-5 h-5 flex items-center justify-center text-gray-400 hover:text-gray-700"
             @click.stop="toggle(node.id)"
           >
-
-          <component :is="ChevronRight" :class="expandedIds.has(node.id) ? 'rotate-90 duration-200 ease-linear' :'duration-200 ease-linear' " />
+            <component
+              :is="ChevronRight"
+              :class="
+                expandedIds.has(node.id)
+                  ? 'rotate-90 duration-200 ease-linear'
+                  : 'duration-200 ease-linear'
+              "
+            />
           </button>
           <span v-else class="w-5"></span>
 

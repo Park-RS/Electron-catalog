@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import type { CatalogItem } from '../service/CatalogService'
 import { catalogService } from '../service/CatalogService'
-import { ImageOff } from '@lucide/vue'
+import { CheckCircle2, Flame, ImageOff, Scale, Tag } from '@lucide/vue'
 
 defineProps<{
   item: CatalogItem
@@ -43,22 +43,22 @@ const isCurrentImageNotFound = ref<boolean>(false)
     <div class="flex flex-wrap gap-4 text-xs text-gray-500 border-t border-gray-100 pt-3">
       <div v-if="item.product.weight && item.product.unitType" class="flex items-center gap-1">
         <!-- Иконок получше на Lucide не нашел -->
-        <span class="text-gray-400">⚖️</span>
+        <Scale class="w-3 h-3 text-gray-400" />
         <span>{{ item.product.weight }} {{ item.product.unitType }}</span>
       </div>
 
       <div v-if="item.product.brand" class="flex items-center gap-1">
-        <span class="text-gray-400">🏷️</span>
+        <Tag class="w-3 h-3 text-gray-400" />
         <span>{{ item.product.brand }}</span>
       </div>
 
       <div v-if="item.product.calories" class="flex items-center gap-1">
-        <span class="text-gray-400">🔥</span>
+        <Flame class="w-3 h-3 text-gray-400 stroke-amber-500" />
         <span>{{ item.product.calories }} ккал</span>
       </div>
 
       <div v-if="item.product.inStock" class="flex items-center gap-1 text-green-600">
-        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+        <CheckCircle2 class="w-3 h-3" />
         <span>{{ item.product.inStock ? 'В наличии' : 'Товар отсутствует' }}</span>
       </div>
     </div>
