@@ -4,7 +4,7 @@
       "id": 1,
       "idParent": null,
       "name": "Горячие напитки",
-      "logo": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=100&h=100"
+      "logo": "group-1.jpg"
     },
     {
       "id": 2,
@@ -50,7 +50,7 @@
       "id": 10,
       "idParent": null,
       "name": "Холодные напитки",
-      "logo": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=100&h=100"
+      "logo": "group-10.jpg"
     },
     {
       "id": 11,
@@ -71,7 +71,7 @@
       "id": 14,
       "idParent": null,
       "name": "Десерты",
-      "logo": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=100&h=100"
+      "logo": "group-14.jpg"
     },
     {
       "id": 15,
@@ -92,7 +92,7 @@
       "id": 18,
       "idParent": null,
       "name": "Завтраки",
-      "logo": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=100&h=100"
+      "logo": "group-18.jpg"
     },
     {
       "id": 19,
@@ -108,7 +108,7 @@
       "id": 21,
       "idParent": null,
       "name": "Сэндвичи и салаты",
-      "logo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=100&h=100"
+      "logo": "group-21.jpg"
     },
     {
       "id": 22,
@@ -134,8 +134,11 @@
         "unitType": "мл",
         "brand": "Arabica Premium",
         "calories": 5,
+        "proteins": 0.5,
+        "fats": 0.2,
+        "carbs": 0,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-1.jpg"
       }
     },
     {
@@ -150,8 +153,11 @@
         "unitType": "мл",
         "brand": "Arabica Premium",
         "calories": 10,
+        "proteins": 1,
+        "fats": 0.3,
+        "carbs": 0,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-2.jpg"
       }
     },
     {
@@ -166,8 +172,11 @@
         "unitType": "мл",
         "brand": "Arabica Premium",
         "calories": 10,
+        "proteins": 0.5,
+        "fats": 0,
+        "carbs": 0,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-3.jpg"
       }
     },
     {
@@ -182,8 +191,11 @@
         "unitType": "мл",
         "brand": "Arabica Premium",
         "calories": 120,
+        "proteins": 6,
+        "fats": 6,
+        "carbs": 8,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-4.jpg"
       }
     },
     {
@@ -198,8 +210,11 @@
         "unitType": "мл",
         "brand": "Arabica Premium",
         "calories": 150,
+        "proteins": 7,
+        "fats": 7,
+        "carbs": 11,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-5.jpg"
       }
     },
     {
@@ -214,8 +229,11 @@
         "unitType": "мл",
         "brand": "Arabica Premium",
         "calories": 110,
+        "proteins": 6,
+        "fats": 5,
+        "carbs": 8,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-6.jpg"
       }
     },
     {
@@ -230,8 +248,11 @@
         "unitType": "мл",
         "brand": "Coffee House",
         "calories": 220,
+        "proteins": 5,
+        "fats": 12,
+        "carbs": 20,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-7.jpg"
       }
     },
     {
@@ -246,8 +267,11 @@
         "unitType": "мл",
         "brand": "Coffee House",
         "calories": 280,
+        "proteins": 6,
+        "fats": 9,
+        "carbs": 38,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1481437642641-2f0ae875f836?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-8.jpg"
       }
     },
     {
@@ -262,8 +286,11 @@
         "unitType": "мл",
         "brand": "Coffee House",
         "calories": 320,
+        "proteins": 8,
+        "fats": 13,
+        "carbs": 38,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-9.jpg"
       }
     },
     {
@@ -278,8 +305,11 @@
         "unitType": "мл",
         "brand": "Coffee House",
         "calories": 140,
+        "proteins": 6,
+        "fats": 5,
+        "carbs": 15,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-10.jpg"
       }
     },
     {
@@ -294,8 +324,11 @@
         "unitType": "мл",
         "brand": "Twinings",
         "calories": 2,
+        "proteins": 0,
+        "fats": 0,
+        "carbs": 0.5,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-11.jpg"
       }
     },
     {
@@ -310,8 +343,11 @@
         "unitType": "мл",
         "brand": "Twinings",
         "calories": 2,
+        "proteins": 0,
+        "fats": 0,
+        "carbs": 0.5,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-12.jpg"
       }
     },
     {
@@ -326,8 +362,11 @@
         "unitType": "мл",
         "brand": "Green Tea Co",
         "calories": 1,
+        "proteins": 0,
+        "fats": 0,
+        "carbs": 0.3,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-13.jpg"
       }
     },
     {
@@ -342,8 +381,11 @@
         "unitType": "мл",
         "brand": "Green Tea Co",
         "calories": 15,
+        "proteins": 0.5,
+        "fats": 0.5,
+        "carbs": 2,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-14.jpg"
       }
     },
     {
@@ -358,8 +400,11 @@
         "unitType": "мл",
         "brand": "Herbal Tea",
         "calories": 0,
+        "proteins": 0,
+        "fats": 0,
+        "carbs": 0,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-15.jpg"
       }
     },
     {
@@ -374,8 +419,11 @@
         "unitType": "мл",
         "brand": "Herbal Tea",
         "calories": 45,
+        "proteins": 0.2,
+        "fats": 0,
+        "carbs": 11,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-16.jpg"
       }
     },
     {
@@ -390,8 +438,11 @@
         "unitType": "мл",
         "brand": "Coffee House",
         "calories": 380,
+        "proteins": 5,
+        "fats": 14,
+        "carbs": 56,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-17.jpg"
       }
     },
     {
@@ -406,8 +457,11 @@
         "unitType": "мл",
         "brand": "Coffee House",
         "calories": 420,
+        "proteins": 6,
+        "fats": 16,
+        "carbs": 60,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-18.jpg"
       }
     },
     {
@@ -422,8 +476,11 @@
         "unitType": "мл",
         "brand": "Fresh",
         "calories": 120,
+        "proteins": 0.2,
+        "fats": 0,
+        "carbs": 30,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-19.jpg"
       }
     },
     {
@@ -438,8 +495,11 @@
         "unitType": "мл",
         "brand": "Fresh",
         "calories": 140,
+        "proteins": 0.3,
+        "fats": 0,
+        "carbs": 35,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-20.jpg"
       }
     },
     {
@@ -454,8 +514,11 @@
         "unitType": "мл",
         "brand": "Fresh",
         "calories": 180,
+        "proteins": 3,
+        "fats": 1,
+        "carbs": 38,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-21.jpg"
       }
     },
     {
@@ -470,8 +533,11 @@
         "unitType": "мл",
         "brand": "Fresh",
         "calories": 210,
+        "proteins": 5,
+        "fats": 2,
+        "carbs": 40,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-22.jpg"
       }
     },
     {
@@ -486,8 +552,11 @@
         "unitType": "г",
         "brand": "Boulangerie",
         "calories": 320,
+        "proteins": 7,
+        "fats": 19,
+        "carbs": 32,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1555507036-ab1f4038024a?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-23.jpg"
       }
     },
     {
@@ -502,8 +571,11 @@
         "unitType": "г",
         "brand": "Boulangerie",
         "calories": 280,
+        "proteins": 6,
+        "fats": 16,
+        "carbs": 30,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-24.jpg"
       }
     },
     {
@@ -518,8 +590,11 @@
         "unitType": "г",
         "brand": "Boulangerie",
         "calories": 350,
+        "proteins": 5,
+        "fats": 17,
+        "carbs": 45,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-25.jpg"
       }
     },
     {
@@ -534,8 +609,11 @@
         "unitType": "г",
         "brand": "Sweet Dreams",
         "calories": 420,
+        "proteins": 7,
+        "fats": 28,
+        "carbs": 34,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1524351199032-cb0ac61c5d3e?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-26.jpg"
       }
     },
     {
@@ -550,8 +628,11 @@
         "unitType": "г",
         "brand": "Sweet Dreams",
         "calories": 380,
+        "proteins": 6,
+        "fats": 24,
+        "carbs": 32,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-27.jpg"
       }
     },
     {
@@ -566,8 +647,11 @@
         "unitType": "г",
         "brand": "Sweet Dreams",
         "calories": 290,
+        "proteins": 4,
+        "fats": 16,
+        "carbs": 32,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-28.jpg"
       }
     },
     {
@@ -582,8 +666,11 @@
         "unitType": "г",
         "brand": "Sweet Dreams",
         "calories": 220,
+        "proteins": 3,
+        "fats": 10,
+        "carbs": 28,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-29.jpg"
       }
     },
     {
@@ -598,8 +685,11 @@
         "unitType": "г",
         "brand": "Boulangerie",
         "calories": 180,
+        "proteins": 2,
+        "fats": 9,
+        "carbs": 22,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-30.jpg"
       }
     },
     {
@@ -614,8 +704,11 @@
         "unitType": "г",
         "brand": "Breakfast Club",
         "calories": 380,
+        "proteins": 18,
+        "fats": 16,
+        "carbs": 38,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-31.jpg"
       }
     },
     {
@@ -630,8 +723,11 @@
         "unitType": "г",
         "brand": "Breakfast Club",
         "calories": 280,
+        "proteins": 19,
+        "fats": 20,
+        "carbs": 6,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-32.jpg"
       }
     },
     {
@@ -646,8 +742,11 @@
         "unitType": "г",
         "brand": "Breakfast Club",
         "calories": 340,
+        "proteins": 10,
+        "fats": 20,
+        "carbs": 28,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-33.jpg"
       }
     },
     {
@@ -662,8 +761,11 @@
         "unitType": "г",
         "brand": "Breakfast Club",
         "calories": 320,
+        "proteins": 12,
+        "fats": 10,
+        "carbs": 44,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-34.jpg"
       }
     },
     {
@@ -678,8 +780,11 @@
         "unitType": "г",
         "brand": "Breakfast Club",
         "calories": 380,
+        "proteins": 8,
+        "fats": 10,
+        "carbs": 62,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-35.jpg"
       }
     },
     {
@@ -694,8 +799,11 @@
         "unitType": "г",
         "brand": "Sandwich Bar",
         "calories": 520,
+        "proteins": 28,
+        "fats": 26,
+        "carbs": 40,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-36.jpg"
       }
     },
     {
@@ -710,8 +818,11 @@
         "unitType": "г",
         "brand": "Sandwich Bar",
         "calories": 380,
+        "proteins": 22,
+        "fats": 18,
+        "carbs": 28,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-37.jpg"
       }
     },
     {
@@ -726,8 +837,11 @@
         "unitType": "г",
         "brand": "Sandwich Bar",
         "calories": 450,
+        "proteins": 24,
+        "fats": 22,
+        "carbs": 36,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-38.jpg"
       }
     },
     {
@@ -742,8 +856,11 @@
         "unitType": "г",
         "brand": "Fresh",
         "calories": 380,
+        "proteins": 28,
+        "fats": 22,
+        "carbs": 12,
         "inStock": true,
-        "logo": "https://picsum.photos/seed/espresso1/400/300"
+        "logo": "product-39.jpg"
       }
     },
     {
@@ -758,8 +875,11 @@
         "unitType": "г",
         "brand": "Fresh",
         "calories": 280,
+        "proteins": 8,
+        "fats": 22,
+        "carbs": 10,
         "inStock": true,
-        "logo": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&h=300"
+        "logo": "product-40.jpg"
       }
     }
   ]

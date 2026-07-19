@@ -14,7 +14,7 @@ const emit = defineEmits<{
 
 const expandedIds = ref<Set<number>>(new Set())
 
-const toggle = (id: number) => {
+const toggle = (id: number): void => {
   if (expandedIds.value.has(id)) {
     expandedIds.value.delete(id)
   } else {
@@ -22,22 +22,32 @@ const toggle = (id: number) => {
   }
 }
 
-const handleSelect = (node: CategoryNode) => {
+const handleSelect = (node: CategoryNode): void => {
   emit('select', node)
 }
 </script>
 
 <template>
-  <ul class="space-y-1" :class="{ 'ml-4 border-l border-gray-200 pl-2': level && level > 0 }">
-    <li v-for="node in nodes" :key="node.id">
+  <ul
+    class="space-y-1"
+    :role="level ? 'group' : 'tree'"
+    :class="{ 'ml-4 border-l border-gray-200 pl-2': level && level > 0 }"
+  >
+    <li v-for="node in nodes" :key="node.id" role="none">
       <div
-        class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors"
+        class="flex items-center justify-between p-2 rounded-lg cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-blue-100"
+        role="treeitem"
+        tabindex="0"
+        :aria-expanded="node.children.length > 0 ? expandedIds.has(node.id) : undefined"
         @click="handleSelect(node)"
       >
         <div class="flex items-center gap-2">
           <button
             v-if="node.children.length > 0"
+            type="button"
             class="w-5 h-5 flex items-center justify-center text-gray-400 hover:text-gray-700"
+            :aria-label="expandedIds.has(node.id) ? 'Свернуть' : 'Развернуть'"
+            tabindex="-1"
             @click.stop="toggle(node.id)"
           >
             <component

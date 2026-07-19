@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { Utensils } from '@lucide/vue'
 import ProductCard from '@renderer/components/ProductCard.vue'
+import ProductDetailsModal from '@renderer/components/ProductDetailsModal.vue'
 import type { CatalogItem, CategoryNode } from '@renderer/service/CatalogService'
 
 defineProps<{
@@ -8,6 +10,8 @@ defineProps<{
   displayedItems: CatalogItem[]
   selectedNode?: CategoryNode | null
 }>()
+
+const selectedItem = ref<CatalogItem | null>(null)
 </script>
 
 <template>
@@ -34,9 +38,12 @@ defineProps<{
           :key="item.id"
           class="w-full max-h-[444px]"
           :item="item"
+          @open="selectedItem = $event"
         />
       </ul>
     </Transition>
+
+    <ProductDetailsModal v-if="selectedItem" :item="selectedItem" @close="selectedItem = null" />
 
     <Transition name="fade" appear mode="out-in">
       <div

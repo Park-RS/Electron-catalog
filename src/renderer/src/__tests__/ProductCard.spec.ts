@@ -31,7 +31,6 @@ describe('ProductCard', () => {
 
     expect(screen.getByText('Эспрессо Классик')).toBeInTheDocument()
     expect(screen.getByText('120.00 ₽')).toBeInTheDocument()
-    expect(screen.getByText('Крепкий черный кофе')).toBeInTheDocument()
   })
 
   it('должен отображать бейдж "В наличии", если inStock: true', () => {

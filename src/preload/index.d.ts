@@ -1,11 +1,9 @@
-import { ElectronAPI } from '@electron-toolkit/preload'
-import { Catalog } from '../main/models/CatalogTypes'
+import { CatalogResponse } from '../shared/catalogTypes'
 
 declare global {
   interface Window {
-    electron: ElectronAPI
     api: {
-      getCatalog: () => Catalog
+      getCatalog: () => Promise<CatalogResponse>
     }
   }
 }

@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/vue'
 import { describe, it, expect } from 'vitest'
 import SearchContent from '@renderer/components/ui/SearchContent.vue'
+import { CategoryNode } from '@renderer/service/CatalogService'
 
 describe('SearchContent', () => {
   it('должен показывать заглушку, когда массив товаров пустой', () => {
@@ -20,12 +21,7 @@ describe('SearchContent', () => {
       props: {
         displayedItems: [],
         searchQuery: '',
-        selectedNode: {
-          id: 1,
-          name: 'Горячие напитки',
-          children: [],
-          products: []
-        } as any
+        selectedNode: new CategoryNode({ id: 1, idParent: null, name: 'Горячие напитки' })
       }
     })
 

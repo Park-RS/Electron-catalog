@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --ev-c-white: #ffffff;
@@ -66,18 +66,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 * {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
 
 .custom-scrollbar {
   -webkit-overflow-scrolling: touch;
-  
+
   scroll-behavior: smooth;
 
   overscroll-behavior: contain;
-  
+
   scrollbar-width: thin;
   scrollbar-color: #cbd5e1 transparent;
 }
@@ -95,7 +98,9 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #cbd5e1;
   border-radius: 10px;
-  transition: background-color 0.2s ease, opacity 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {

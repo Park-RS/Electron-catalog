@@ -1,9 +1,9 @@
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
-import { join } from 'path'
+import { join, extname } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { readFileSync } from 'fs'
-import { Catalog } from '../renderer/src/service/catalogService'
+import { existsSync, readFileSync } from 'fs'
+import { Catalog } from '../shared/catalogTypes'
 
 function createWindow(): void {
   // Create the browser window.
@@ -14,10 +14,7 @@ function createWindow(): void {
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
-      preload: join(__dirname, '../preload/index.js'),
-      webSecurity: false,
-      allowRunningInsecureContent: true,
-      sandbox: false
+      preload: join(__dirname, '../preload/index.js')
     }
   })
 
@@ -30,8 +27,6 @@ function createWindow(): void {
     return { action: 'deny' }
   })
 
-  // HMR for renderer base on electron-vite cli.
-  // Load the remote URL for development or the local html file for production.
   if (is.dev && process.env['ELECTRON_RENDERER_URL']) {
     mainWindow.loadURL(process.env['ELECTRON_RENDERER_URL'])
   } else {
@@ -39,17 +34,55 @@ function createWindow(): void {
   }
 }
 
+const IMAGE_MIME_TYPES: Record<string, string> = {
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.png': 'image/png',
+  '.webp': 'image/webp'
+}
+
+const getResourcesBasePath = (): string => (is.dev ? process.cwd() : app.getAppPath())
+
+// Изначально все пути картинок лежали в unsplash, но почему то прямыми ссылками в свойтве в JSON не хотело подгружать, в итоге пришлось скачать все локально
+
+const resolveImage = (filename: string): string => {
+  const imagePath = join(getResourcesBasePath(), 'resources', 'images', filename)
+  if (!existsSync(imagePath)) {
+    return filename
+  }
+
+  const mimeType = IMAGE_MIME_TYPES[extname(filename)] ?? 'image/jpeg'
+  const buffer = readFileSync(imagePath)
+  return `data:${mimeType};base64,${buffer.toString('base64')}`
+}
+
 const loadCatalog = (): Catalog => {
-  const basePath = is.dev ? process.cwd() : app.getAppPath()
-
-  const catalogPath = join(basePath, 'catalog', 'catalog.json')
-
+  const catalogPath = join(getResourcesBasePath(), 'catalog', 'catalog.json')
   const fileContent = readFileSync(catalogPath, 'utf-8')
-  return JSON.parse(fileContent)
+  const catalog: Catalog = JSON.parse(fileContent)
+
+  // TODO: Переделать на вариант получше,
+  catalog.groups.forEach((group) => {
+    if (group.logo) {
+      group.logo = resolveImage(group.logo)
+    }
+  })
+
+  catalog.items.forEach((item) => {
+    if (item.product.logo) {
+      item.product.logo = resolveImage(item.product.logo)
+    }
+  })
+
+  return catalog
 }
 
 ipcMain.handle('get-catalog', () => {
-  return loadCatalog()
+  try {
+    return { ok: true, data: loadCatalog() }
+  } catch (error) {
+    return console.error('Ошибка чтения справочника каталога:', error)
+  }
 })
 
 // This method will be called when Electron has finished

@@ -1,10 +1,10 @@
 {
   "name": "electron-catalog",
   "version": "1.0.0",
-  "description": "An Electron application with Vue and TypeScript",
+  "description": "Каталог товаров кофейни: Electron + Vue 3 + TypeScript, дерево категорий, поиск и карточки товаров",
   "main": "./out/main/index.js",
-  "author": "example.com",
-  "homepage": "https://electron-vite.org",
+  "author": "unknown",
+  "homepage": "https://github.com/Park-RS/Electron-catalog",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint --cache .",

@@ -7,4 +7,5 @@ import App from './App.vue'
 
 const app = createApp(App)
 
-app.use(autoAnimatePlugin).mount('#app')
+app.use(autoAnimatePlugin)
+app.mount('#app')

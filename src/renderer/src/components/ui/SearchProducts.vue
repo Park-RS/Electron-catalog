@@ -12,6 +12,7 @@ const searchQuery = defineModel<string>()
       <input
         v-model="searchQuery"
         type="text"
+        aria-label="Поиск товаров по каталогу"
         placeholder="Поиск напитков и десертов..."
         class="w-full pl-11 pr-4 py-3 bg-gray-100 border-none rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
       />
